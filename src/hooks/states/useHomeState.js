@@ -6,8 +6,9 @@ const useHomeState = () => {
   return {
     loading: state.loading,
     error: state.error,
+    logo:state.data?.logo,
     menus: state.data?.menus,
-    home: state.data?.home,
+    hero: state.data?.home,
     about: state.data?.about,
     expertise: state.data?.expertise,
     services: state.data?.services,
