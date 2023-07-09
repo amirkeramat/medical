@@ -13,11 +13,11 @@ const Layout = ({ children }) => {
   return (
     <>
       {loading === "fulfilled" ? (
-        <>
+        <div className="w-full flex flex-col items-center">
           <Header />
-          <main>{children}</main>
-          <Footer />
-        </>
+          <main className="w-full h-full">{children}</main>
+          {/* <Footer /> */}
+        </div>
       ) : (
         <p> Loading</p>
       )}
