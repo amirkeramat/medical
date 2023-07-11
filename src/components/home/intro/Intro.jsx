@@ -21,7 +21,7 @@ const Intro = () => {
     return (
       <div
         style={{ "--image-url": `url(${cover})` }}
-        className="bg-[image:var(--image-url)] bg-teal-200 bg-center  bg-cover bg-no-repeat bg-fixed w-full h-full md:h-[745px] relative flex flex-col justify-center"
+        className="bg-[image:var(--image-url)] bg-teal-200 bg-center bg-opacity-90  bg-cover bg-no-repeat bg-fixed w-full h-full md:h-[745px] relative flex flex-col justify-center"
       >
         <div className="p-7 md:p-12  flex flex-col items-center-center justify-center w-full">
           <h1 className="text-xl text-teal-500 p-2">{label}</h1>
