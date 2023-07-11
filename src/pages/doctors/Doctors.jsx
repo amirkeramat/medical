@@ -13,7 +13,7 @@ const Doctors = () => {
 
   const links = [
     {
-      href: "/",
+      href: "/medical",
       title: "خانه",
     },
     {
