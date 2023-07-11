@@ -17,6 +17,7 @@ const useHomeState = () => {
     costumerComments: state.data?.costumer_comments,
     commonQuestions: state.data?.common_questions,
     blog: state.data?.blog,
+    footer:state.data?.footer
   };
 };
 
