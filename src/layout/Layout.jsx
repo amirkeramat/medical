@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { getHomeData } from "../redux/slices/homeSlice/homeSlice";
+import { getHomeData } from "../redux/slices/homeSlice";
 import Header from "../components/layout/header/Header";
 import Footer from "../components/layout/footer/Footer";
 import { useHomeState } from "../hooks";
