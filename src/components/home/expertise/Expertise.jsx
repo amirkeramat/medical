@@ -18,8 +18,8 @@ const Expertise = () => {
     const { id, title, description } = item;
     const icon = icons.filter((icon) => icon.id === id);
     return (
-      <div className="shadow-sm shadow-zinc-950/10 p-4">
-        <i className="text-teal-500 bg-white p-6 rounded-se-2xl rounded-te-2xl rounded-br-3xl rounded-bl-3xl text-2xl flex justify-center items-center w-[25px] h-[25px] hover:bg-teal-500 hover:text-zinc-50 duration-500">
+      <div className="shadow-sm shadow-zinc-950/10 p-4 group">
+        <i className="text-teal-500 bg-white p-6 rounded-se-2xl rounded-te-2xl rounded-br-3xl rounded-bl-3xl text-2xl flex justify-center items-center w-[25px] h-[25px] group-hover:bg-teal-500 group-hover:text-zinc-50 duration-500">
           {icon[0].icon}
         </i>
         <h6>{title}</h6>
