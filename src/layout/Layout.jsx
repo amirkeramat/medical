@@ -4,6 +4,7 @@ import { getHomeData } from "../redux/slices/HomeSlice";
 import Header from "../components/layout/header/Header";
 import Footer from "../components/layout/footer/Footer";
 import { useHomeState } from "../hooks";
+import PageLoader from "../components/shared/pageLoader/PageLoader";
 const Layout = ({ children }) => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -19,8 +20,9 @@ const Layout = ({ children }) => {
           <Footer />
         </div>
       ) : (
-        <p> Loading</p>
+        <PageLoader/>
       )}
+      
     </>
   );
 };
