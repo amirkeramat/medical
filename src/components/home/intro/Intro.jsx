@@ -21,12 +21,12 @@ const Intro = () => {
     return (
       <div
         style={{ "--image-url": `url(${cover})` }}
-        className="bg-[image:var(--image-url)] bg-teal-200 bg-center  bg-cover bg-no-repeat w-full h-full md:h-[745px] relative flex flex-col justify-center object-center py-20 md:py-0"
+        className="bg-[image:var(--image-url)] bg-teal-200 bg-center  bg-cover bg-no-repeat bg-fixed w-full h-full md:h-[745px] relative flex flex-col justify-center"
       >
-        <div className="p-12 flex flex-col items-center-center justify-center w-full">
-          <h1 className="text-2xl text-teal-500 p-2">{label}</h1>
-          <h2 className="text-3xl p-2">{title}</h2>
-          <p className="text-xl text-zinc-700 w-full md:w-[400px]  p-2">
+        <div className="p-12  flex flex-col items-center-center justify-center w-full">
+          <h1 className="text-xl text-teal-500 p-2">{label}</h1>
+          <h2 className="text-2xl md:text-5xl p-2">{title}</h2>
+          <p className="text-sm md:text-lg text-zinc-700 w-full md:w-[400px]  p-2">
             {description}
           </p>
           <div className="p-2 flex items-center">
@@ -80,7 +80,7 @@ const Intro = () => {
         <h6 className="text-xl text-teal-500">{label}</h6>
         <h5 className="text-2xl font-bold">{title}</h5>
         <p className="text-zinc-700 text-xl">{description}</p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {items.map((item) => (
             <ServicesBox key={item.id} item={item} />
           ))}
