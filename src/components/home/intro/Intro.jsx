@@ -23,13 +23,13 @@ const Intro = () => {
         style={{ "--image-url": `url(${cover})` }}
         className="bg-[image:var(--image-url)] bg-teal-200 bg-center  bg-cover bg-no-repeat bg-fixed w-full h-full md:h-[745px] relative flex flex-col justify-center"
       >
-        <div className="p-12  flex flex-col items-center-center justify-center w-full">
+        <div className="p-7 md:p-12  flex flex-col items-center-center justify-center w-full">
           <h1 className="text-xl text-teal-500 p-2">{label}</h1>
           <h2 className="text-2xl md:text-5xl p-2">{title}</h2>
           <p className="text-sm md:text-lg text-zinc-700 w-full md:w-[400px]  p-2">
             {description}
           </p>
-          <div className="p-2 flex items-center">
+          <div className="py-2 flex items-center">
             <Button
               size="large"
               className="bg-teal-500 text-zinc-50 mx-2 w-[150px] h-[50px] flex items-center group "
