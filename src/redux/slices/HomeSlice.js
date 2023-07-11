@@ -6,7 +6,7 @@ const initialState = {
   data: [],
   error: null,
 };
-import { BASE_URL } from "../../../api/index";
+import { BASE_URL } from "../../api/index";
 
 export const getHomeData = createAsyncThunk("home/getHomeData", async () => {
   return await axios
