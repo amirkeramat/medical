@@ -19,7 +19,7 @@ const Services = () => {
   };
   const links = [
     {
-      href: "/",
+      href: "/medical",
       title: "خانه",
     },
     {
