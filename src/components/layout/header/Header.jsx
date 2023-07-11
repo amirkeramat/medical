@@ -33,7 +33,7 @@ const Header = () => {
   });
 
   return (
-    <header className="container">
+    <header className="container fixed z-[999] bg-zinc-50">
       <div className="flex justify-between items-center  p-2">
         <div className="logo-container">
           <img className="w-[100px]" src={logo.cover} />
