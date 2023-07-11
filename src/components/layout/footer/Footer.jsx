@@ -5,7 +5,7 @@ const Footer = () => {
   const { label, description, items, working_hour } = footer;
   return (
     <div className='container flex flex-col bg-gradient-to-br from-zinc-950/90 via-zinc-900 to-zinc-950 text-zinc-50 p-4'>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 p-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 p-2 md:p-8'>
         <div>
           <h5 className='text-teal-500 text-xl font-bold py-2'>{label}</h5>
           <p>{description}</p>
@@ -17,7 +17,7 @@ const Footer = () => {
               placeholder='ایمیل خود را وارد نمایید'
               type='text'
             />
-            <button className='bg-teal-500 p-2 top-1 font-bold flex items-center rounded-2xl absolute left-2'>
+            <button className='bg-teal-500 p-2 scale-75 md:scale-100 top-1 font-bold flex items-center rounded-2xl absolute -left-4 md:left-0 hover:bg-zinc-900 duration-500 hover:text-teal-500'>
               مشترک شوید
               <SendOutlined className="bg-white p-2 rounded-full mx-2 text-teal-500" />
             </button>
