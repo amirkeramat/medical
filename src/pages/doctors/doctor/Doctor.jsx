@@ -15,7 +15,7 @@ const Doctor = () => {
    const { loading, data } = useSingleData();
    const items = [
      {
-       href: "/",
+       href: "/medical",
        title: "خانه",
      },
      {
