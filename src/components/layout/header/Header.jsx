@@ -1,5 +1,6 @@
 import { Menu, Button } from "antd";
 import { useHomeState } from "../../../hooks";
+import { Link } from "react-router-dom";
 import {
   PlusOutlined,
   LineOutlined,
@@ -17,14 +18,14 @@ const Header = () => {
     return {
       key: menu.id,
       className: "text-xl",
-      label: menu.title,
+      label: <Link to={menu.code}>{menu.title}</Link>,
       icon: menu.subMenu ? <PlusOutlined /> : null,
       children:
         menu.subMenu &&
         menu.subMenu.map((sub) => {
           return {
             key: sub.title,
-            label: sub.title,
+            label: <Link className="text-zinc-50 md:text-teal-500" to={sub.code}>{sub.title}</Link>,
             className: "text-zinc-950 text-lg",
             icon: <LineOutlined />,
           };
