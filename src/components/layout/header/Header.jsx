@@ -25,7 +25,7 @@ const Header = () => {
         menu.subMenu.map((sub) => {
           return {
             key: sub.title,
-            label: <Link className="text-zinc-50 md:text-teal-500" to={sub.code}>{sub.title}</Link>,
+            label: <Link onClick={()=>setToggle(prv=> !prv )} className="text-zinc-50 md:text-teal-500" to={sub.code}>{sub.title}</Link>,
             className: "text-zinc-950 text-lg",
             icon: <LineOutlined />,
           };
