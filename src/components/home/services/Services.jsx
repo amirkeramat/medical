@@ -27,7 +27,7 @@ const Services = () => {
       <h6 className="text-teal-500 text-xl p-2">{label}</h6>
       <h5 className="text-2xl font-semibold p-2">{title}</h5>
       <p className="p-2 text-zinc-700">{description}</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-6">
         {items.map((item) => (
           <ServicesBox key={item.id} item={item} />
         ))}
