@@ -30,7 +30,7 @@ const Services = () => {
   return (
     <div className='flex flex-col items-center pt-10'>
       <div className='container flex flex-col items-center'>
-        <Breadcrumb className='self-start' items={links} />
+        <Breadcrumb className='self-start m-4' items={links} />
         <div
           style={{ "--image-url": `url(${cover})` }}
           className='bg-[image:var(--image-url)] w-full bg-left-bottom h-[400px] md:bg-center bg-fixed bg-cover flex flex-col justify-center items-end md:items-start p-4'>
