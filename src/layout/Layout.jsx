@@ -15,8 +15,8 @@ const Layout = ({ children }) => {
       {loading === "fulfilled" ? (
         <div className="w-full flex flex-col items-center">
           <Header />
-          <main className="w-full h-full">{children}</main>
-          {/* <Footer /> */}
+          <main className="w-full h-full pt-12">{children}</main>
+          <Footer />
         </div>
       ) : (
         <p> Loading</p>
