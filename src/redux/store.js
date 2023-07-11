@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import homeReducer from './slices/HomeSlice'
+import homeReducer from "./slices/HomeSlice";
+import singleDataReducer from "./slices/singleDataSlice";
 const store = configureStore({
   reducer: {
-    homeState:homeReducer
+    homeState: homeReducer,
+    singleData: singleDataReducer,
   },
 });
 
