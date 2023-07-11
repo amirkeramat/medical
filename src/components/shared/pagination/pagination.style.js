@@ -1,7 +1,7 @@
 import tw from "tailwind-styled-components";
 
 export const Ul = tw.ul`
-    flex justify-center items-center flex-wrap
+    flex justify-center items-center flex-wrap my-5
 `;
 export const Li = tw.li`
     ${(p) =>
