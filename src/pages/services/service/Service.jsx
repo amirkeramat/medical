@@ -15,15 +15,15 @@ const Service = () => {
   const { loading, data } = useSingleData();
   const items = [
     {
-      href: "/",
+      href: "/medical",
       title: "خانه",
     },
     {
-      href: "/services",
+      href: "/medical/#/services",
       title: "بخش ها",
     },
     {
-      href: `services/${data.id}`,
+      href: `/medical/#/services/${data.id}`,
       title: data.title,
     },
   ];
