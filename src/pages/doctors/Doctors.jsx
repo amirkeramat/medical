@@ -36,7 +36,7 @@ const Doctors = () => {
         <Breadcrumb className='self-start m-4' items={links} />
         <div
           style={{ "--image-url": `url(${cover})` }}
-          className='bg-[image:var(--image-url)] w-full bg-left-bottom h-[400px] md:bg-center bg-fixed bg-cover flex flex-col justify-center items-end md:items-start p-4'>
+          className='bg-[image:var(--image-url)] w-full bg-left-bottom h-[400px] md:bg-center bg-fixed bg-cover flex flex-col justify-center items-center md:items-start p-4'>
           <h5 className='text-4xl font-bold text-teal-500'>{label}</h5>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-6'>
