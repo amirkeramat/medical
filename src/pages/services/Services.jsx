@@ -19,11 +19,11 @@ const Services = () => {
   };
   const links = [
     {
-      href: "/",
+      href: "/medical",
       title: "خانه",
     },
     {
-      href: "/services",
+      href: "/medical/#/services",
       title: "بخش ها",
     },
   ];
