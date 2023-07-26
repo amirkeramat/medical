@@ -1,7 +1,9 @@
 import { useHomeState } from "../../../hooks";
 import { CheckOutlined, LeftCircleOutlined } from "@ant-design/icons";
-import {Button} from 'antd'
+import { useNavigate } from "react-router-dom";
+import { Button } from "antd";
 const About = () => {
+  const navigate = useNavigate();
   const { about } = useHomeState();
   const { label, title, cover, description, items } = about;
   return (
@@ -19,7 +21,11 @@ const About = () => {
             </p>
           ))}
         </div>
-        <Button size="large" className="bg-teal-500 text-zinc-50 flex items-center mx-2 my-4">
+        <Button
+          onClick={() => navigate("/about")}
+          size="large"
+          className="bg-teal-500 text-zinc-50 flex items-center mx-2 my-4"
+        >
           بیشتر بدانید
           <LeftCircleOutlined />
         </Button>

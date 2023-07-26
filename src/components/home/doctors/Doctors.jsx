@@ -1,11 +1,12 @@
 import { useHomeState } from "../../../hooks";
 import { Button } from "antd";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import DoctorCard from "./DoctorCard";
 import goTop from "../../../hooks/goTop";
 const Doctors = () => {
   const { doctors } = useHomeState();
   const { label, title, description, names } = doctors;
+  const navigate = useNavigate()
   return (
     <div className='container flex flex-col items-center shadow-sm shadow-zinc-950/10 py-10'>
       <h6 className='text-teal-500 text-xl p-2'>{label}</h6>
@@ -17,10 +18,13 @@ const Doctors = () => {
         ))}
       </div>
       <Button
-        onClick={() => goTop()}
+        onClick={() =>{
+          navigate("/doctors")
+          goTop()
+        } }
         size='large'
         className='bg-teal-500 text-zinc-50 my-2'>
-        <Link to={"doctors"}>بیشتر</Link>
+          بیشتر
       </Button>
     </div>
   );

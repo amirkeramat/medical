@@ -16,10 +16,11 @@ const Services = () => {
     const orderedData = items.slice(start, end);
     console.log(orderedData);
     setOrdered(orderedData);
+    
   };
   const links = [
     {
-      href: "/medical",
+      href: "/medical/",
       title: "خانه",
     },
     {

@@ -21,9 +21,9 @@ const ServicesBox = ({ item }) => {
         <p className="p-2">{description}</p>
         <Button
           onClick={buttonHandler}
-          className="bg-teal-500 text-zinc-50 duration-500 group-hover:bg-zinc-50 group-hover:text-zinc-950 "
+          className="bg-teal-500 text-zinc-50 duration-500 group-hover:bg-zinc-50 group-hover:text-teal-500"
         >
-          <Link to={`/services/${id}`}> اطلاعات بیشتر</Link>
+          اطلاعات بیشتر
         </Button>
       </div>
     </div>
